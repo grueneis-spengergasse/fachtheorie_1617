@@ -1,6 +1,6 @@
-package at.spengergasse.persistence;
+package vehiclereservation.persistence;
 
-import at.spengergasse.model.Employee;
+import vehiclereservation.model.Employee;
 import org.springframework.data.repository.CrudRepository;
 
 public interface EmployeeRepository extends CrudRepository<Employee, Long> {

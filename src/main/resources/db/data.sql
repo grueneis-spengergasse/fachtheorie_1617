@@ -2,16 +2,16 @@ insert into employee (id, first_name, last_name, svnr) values (1, 'Rebecca', 'Be
 insert into employee (id, first_name, last_name, svnr) values (2, 'Albert', 'Jordan', '1499593323');
 insert into employee (id, first_name, last_name, svnr) values (3, 'Edward', 'Cook', '5986159118');
 
-insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (4, 'Kombi', 'VW', '730i','BN-779-UP', 7, 0, 80, 2000, 40, 200);
-insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (5, 'Kombi', 'Mercedes','S200','BN-606-YG', 9, 0, 60, 2000, 40, 200);
-insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (6, 'Kombi', 'Mercedes','S100','BN-101-VM', 9, 0, 60, 2000, 40, 200);
-insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (7, 'Kombi', 'BMW', 'S100','BN-015-ST', 7, 0, 60, 2000, 30, 200);
+insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (4, 'KOMBI', 'VW', '730i','BN-779-UP', 7, 0, 80, 2000, 40, 200);
+insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (5, 'KOMBI', 'Mercedes','S200','BN-606-YG', 9, 0, 60, 2000, 40, 200);
+insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (6, 'KOMBI', 'Mercedes','S100','BN-101-VM', 9, 0, 60, 2000, 40, 200);
+insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (7, 'KOMBI', 'BMW', 'S100','BN-015-ST', 7, 0, 60, 2000, 30, 200);
 insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (8, 'PKW', 'Mercedes','S100','BN-716-UK', 7, 0, 90, 2000, 20, 200);
 insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (9, 'PKW', 'VW', '730i','BN-374-PO', 5, 0, 50, 1500, 20, 100);
-insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (10, 'Kombi', 'Mercedes','730i','BN-568-LI', 7, 0, 50, 1500, 40, 100);
+insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (10, 'KOMBI', 'Mercedes','730i','BN-568-LI', 7, 0, 50, 1500, 40, 100);
 insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (11, 'PKW', 'BMW', 'S200','BN-913-XY', 7, 0, 50, 1500, 40, 100);
-insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (12, 'Kombi', 'VW', 'S200','BN-162-PU', 5, 0, 50, 1500, 20, 100);
-insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (13, 'Kombi', 'VW', 'S200','BN-569-SV', 7, 0, 60, 1500, 40, 100);
+insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (12, 'KOMBI', 'VW', 'S200','BN-162-PU', 5, 0, 50, 1500, 20, 100);
+insert into vehicle (id, vehicle_type, brand, model, number_plate, seat_nr, km, basic_price, included_km, price_per100km, penalty_per_day) values (13, 'KOMBI', 'VW', 'S200','BN-569-SV', 7, 0, 60, 1500, 40, 100);
 
 insert into reservation ( vehicle_id, employee_id, date_from, date_to) VALUES (13, 3, '2014-08-23', '2014-08-28T10:00:00');
 insert into reservation ( vehicle_id, employee_id, date_from, date_to) VALUES (13, 3, '2015-02-20', '2015-02-25T19:00:00');

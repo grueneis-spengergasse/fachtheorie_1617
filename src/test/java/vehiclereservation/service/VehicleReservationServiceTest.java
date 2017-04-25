@@ -1,25 +1,27 @@
-package at.spengergasse.persistence;
+package vehiclereservation.service;
 
-import at.spengergasse.model.Employee;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import vehiclereservation.model.Vehicle;
+
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
-public class EmployeeRepositoryTest {
+public class VehicleReservationServiceTest {
 
     @Autowired
-    private EmployeeRepository employeeRepository;
+    private VehicleReservationService vehicleReservationService;
 
     @Test
-    public void verifyDataFromScript() {
-        Iterable<Employee> all = employeeRepository.findAll();
+    public void verifyFindAllVehicles() {
+        List<Vehicle> vehicles = vehicleReservationService.findAllVehicles();
 
-        assertThat(all).isNotEmpty().hasSize(3);
+        assertThat(vehicles).isNotEmpty();
     }
 }

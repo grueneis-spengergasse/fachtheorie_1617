@@ -1,4 +1,4 @@
-package at.spengergasse.model;
+package vehiclereservation.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
