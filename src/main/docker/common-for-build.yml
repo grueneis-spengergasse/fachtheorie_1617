@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  base_stage:
+    image: openjdk:8-jdk
+    volumes:
+      - ${PROJECT_DIR}:/project
+      - dot_m2:/root/.m2
+    working_dir: "/project"
+    environment:
+      - MAVEN_OPTS
+    network_mode: host
