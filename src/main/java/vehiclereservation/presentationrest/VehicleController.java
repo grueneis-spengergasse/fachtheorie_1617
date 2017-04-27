@@ -1,4 +1,4 @@
-package vehiclereservation.presentation;
+package vehiclereservation.presentationrest;
 
 import vehiclereservation.model.Vehicle;
 import vehiclereservation.service.VehicleReservationService;

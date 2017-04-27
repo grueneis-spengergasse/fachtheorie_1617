@@ -1,13 +1,11 @@
 package vehiclereservation.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -28,9 +26,11 @@ public class Vehicle extends AbstractPersistable<Long> {
     private Double pricePer100Km;
     private Double penaltyPerDay;
 
-    @OneToMany(mappedBy = "vehicle")
+    @JsonIgnore
+    @OneToMany(mappedBy = "vehicle", fetch = FetchType.LAZY)
     private List<Reservation> reservations;
 
-    @OneToMany(mappedBy = "vehicle")
+    @JsonIgnore
+    @OneToMany(mappedBy = "vehicle", fetch = FetchType.LAZY)
     private List<Trip> trips;
 }

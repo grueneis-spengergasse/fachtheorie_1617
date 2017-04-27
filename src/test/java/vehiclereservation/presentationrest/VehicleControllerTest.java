@@ -1,4 +1,4 @@
-package vehiclereservation.presentation;
+package vehiclereservation.presentationrest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
