@@ -3,12 +3,12 @@ version: '2'
 services:
   build:
     extends:
-      file: common-for-build.yml
+      file: ./common-for-build.yml
       service: base_stage
     command: sh -c "./mvnw -Dmaven.repo.local=/root/.m2 help:system help:effective-pom clean install "
   deploy:
     extends:
-      file: common-for-build.yml
+      file: ./common-for-build.yml
       service: base_stage
     command: sh -c "./mvnw -Dmaven.repo.local=/root/.m2 deploy"
 

@@ -128,6 +128,31 @@
                 </executions>
             </plugin>
             <plugin>
+                <groupId>com.github.ricksbrown</groupId>
+                <artifactId>cowsay</artifactId>
+                <version>1.0.3</version>
+                <executions>
+                    <execution>
+                        <id>say-moo</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>moo</goal>
+                        </goals>
+                        <configuration>
+                            <message>Compiling awesome stuff...</message>
+                            <eyes>Oo</eyes>
+                            <tongue> V</tongue>
+                            <!-- Other options:
+                            <cowfile>sheep</cowfile>
+                            <mode>b</mode>
+                            <think>true</think>
+                            <wrap>60</wrap>
+                            -->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
