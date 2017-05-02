@@ -16,12 +16,13 @@ import java.util.List;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(VehicleController.class)
-public class VehicleControllerTest {
+@WebMvcTest(VehicleRestController.class)
+public class VehicleRestControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -34,8 +35,8 @@ public class VehicleControllerTest {
         List<Vehicle> vehicles = Arrays.asList(new Vehicle(), new Vehicle(), new Vehicle());
         given(vehicleReservationService.findAllVehicles()).willReturn(vehicles);
 
-        mockMvc.perform(get("/api/cars"))
+        mockMvc.perform(get("/api/vehicles"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(3)));
+                .andExpect(jsonPath("$", hasSize(vehicles.size())));
     }
 }
